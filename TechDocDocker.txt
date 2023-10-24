@@ -1,0 +1,32 @@
+To pull the image for first time
+docker run -it <image name>
+
+running conatiners
+docker conatiners ls
+
+
+List All conatiners
+docker conatiners ls -a
+
+
+start the docker conatiner
+docker start <conatiner_name> <command>
+
+Open in the conatiner
+docker exec -it <conatiner_name>
+
+Port mapping 
+docker run -it -p portnumber:portnumber imagename
+
+env variables 
+docker run -it -p portnumber:portnumber -e key=value -e key=value imagename
+
+custom images 
+docker build -t <imagename> <Path_of_Dockerfile> 
+Example to run
+docker run -it -p 8000:8000  docdocklearn 
+
+docker compose up 
+first  how compose file look in docker-compose.yml 
+
+docker compose up
